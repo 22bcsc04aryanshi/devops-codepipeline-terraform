@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "Installing dependencies..." > /home/ubuntu/app/install.log
+sudo apt update -y
+sudo apt install -y nginx
+echo "<h1>Deployment successful!</h1>" | sudo tee /var/www/html/index.html
