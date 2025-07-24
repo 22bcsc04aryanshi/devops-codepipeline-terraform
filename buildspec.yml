@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing placeholder...
+  build:
+    commands:
+      - echo Building placeholder...
+      - mkdir build
+      - echo "Hello from build!" > build/output.txt
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build

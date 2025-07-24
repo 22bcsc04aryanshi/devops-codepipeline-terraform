@@ -1,0 +1,10 @@
+# Terraform files to ignore
+.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
+
+# Node and build files to ignore
+node_modules/
+build/
+dist/
