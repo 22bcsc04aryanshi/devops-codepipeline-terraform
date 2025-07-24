@@ -1,4 +1,5 @@
 #!/bin/bash
-sudo apt update -y
-sudo apt install -y nginx
-echo "<h1>Deployment successful!</h1>" | sudo tee /var/www/html/index.html
+cd /home/ubuntu/app
+sudo apt update
+sudo apt install -y nodejs npm
+npm install
