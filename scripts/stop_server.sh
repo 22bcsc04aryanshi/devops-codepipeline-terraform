@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Stopping app..." >> /home/ubuntu/app/install.log
+echo "StopServer executed" >> /home/ubuntu/app/install.log

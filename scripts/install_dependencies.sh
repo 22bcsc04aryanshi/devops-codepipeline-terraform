@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Installing dependencies..." > /home/ubuntu/app/install.log
+mkdir -p /home/ubuntu/app
+echo "BeforeInstall executed" > /home/ubuntu/app/install.log

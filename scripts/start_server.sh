@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Starting app..." >> /home/ubuntu/app/install.log
+echo "StartServer executed" >> /home/ubuntu/app/install.log
