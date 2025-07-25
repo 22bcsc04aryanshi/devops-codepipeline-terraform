@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo systemctl stop nginx
+echo "Stopping app..." >> /home/ubuntu/app/install.log

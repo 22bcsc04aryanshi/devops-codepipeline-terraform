@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo systemctl start nginx
+echo "Starting app..." >> /home/ubuntu/app/install.log
