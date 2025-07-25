@@ -1,4 +1,3 @@
 #!/bin/bash
-apt-get update -y
-apt-get install -y nodejs npm
-mkdir -p /home/ubuntu/app
+sudo apt update -y
+sudo apt install -y nodejs npm
