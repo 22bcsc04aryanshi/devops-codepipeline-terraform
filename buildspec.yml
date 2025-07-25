@@ -3,13 +3,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing placeholder...
+      - echo Installing dependencies...
   build:
     commands:
-      - echo Building placeholder...
-      - mkdir build
-      - cp -r * build/
-
+      - echo Build started on `date`
+      - mkdir -p build
+      - shopt -s extglob
+      - cp -r !(build) build/
 artifacts:
   files:
     - '**/*'
