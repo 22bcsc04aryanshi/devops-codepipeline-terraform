@@ -3,15 +3,15 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
-
+      - echo "Installing..."
   build:
     commands:
-      - echo Build started on `date`
-      - mkdir -p build
-      - rsync -av --progress ./ ./build --exclude build
+      - echo "Building app..."
+      - mkdir build-artifact
+      - shopt -s extglob
+      - cp -r !(build-artifact) build-artifact/
 
 artifacts:
   files:
     - '**/*'
-  base-directory: build
+  base-directory: build-artifact
