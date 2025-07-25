@@ -8,7 +8,7 @@ phases:
     commands:
       - echo Building placeholder...
       - mkdir build
-      - echo "Hello from build!" > build/output.txt
+      - cp -r * build/
 
 artifacts:
   files:
