@@ -4,12 +4,13 @@ phases:
   install:
     commands:
       - echo Installing dependencies...
+
   build:
     commands:
       - echo Build started on `date`
       - mkdir -p build
-      - shopt -s extglob
-      - cp -r !(build) build/
+      - rsync -av --progress ./ ./build --exclude build
+
 artifacts:
   files:
     - '**/*'
